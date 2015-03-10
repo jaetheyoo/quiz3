@@ -14,6 +14,11 @@ public class Triangle extends GeometricObject {
 	private double side2 = 1.0;
 	private double side3 = 1.0;
 	
+	public static void main(String[] args) {
+		Triangle t = new Triangle(1,1,1);
+		System.out.println(t.toString());
+	}
+	
 	public double getSide1() {
 		return side1;
 	}
@@ -48,6 +53,6 @@ public class Triangle extends GeometricObject {
 	}
 	
 	public String toString(){
-		return "triangle's side1 = " + side1 + ", side2 = " + side2 + ", and side3 = " + side3;		
+		return super.toString() + "\ntriangle's side1 = " + side1 + ", side2 = " + side2 + ", and side3 = " + side3;		
 	}
 }
